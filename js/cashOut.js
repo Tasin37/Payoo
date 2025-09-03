@@ -1,8 +1,8 @@
 // Cash out
 document.getElementById('btn-cashOut').addEventListener('click', function(event){
     event.preventDefault();
-    const inputAmount = document.getElementById('input-amount').value;
-    const inputPin = document.getElementById('input-pin').value;
+    const inputAmount = document.getElementById('input-out-amount').value;
+    const inputPin = document.getElementById('input-out-pin').value;
 
     if (inputPin=='1234'){
         console.log('Reducing money from your account');

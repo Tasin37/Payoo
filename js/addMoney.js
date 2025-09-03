@@ -1,8 +1,8 @@
 // Add Money
 document.getElementById('btn-addMoney').addEventListener('click', function(event){
     event.preventDefault();
-    const inputAmount = document.getElementById('input-amount').value;
-    const inputPin = document.getElementById('input-pin').value;
+    const inputAmount = document.getElementById('input-add-amount').value;
+    const inputPin = document.getElementById('input-add-pin').value;
 
     if (inputPin=='1234'){
         console.log('Adding money to your account');
