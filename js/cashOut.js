@@ -12,6 +12,12 @@ document.getElementById('btn-cashOut').addEventListener('click', function(event)
         const newbalance = balanceNum - reduceMoneyNum;
         console.log(newbalance);
         document.getElementById('balance').innerText = newbalance;
+
+        // adding in transaction history
+        const p = document.createElement('p');
+        p.innerText = `Reduced: ${reduceMoneyNum} Tk. New Balance: ${newbalance}`;
+
+        document.getElementById('transaction-history').appendChild(p);
     }
     else{
         alert('Failed to cash out!! Please try again.');

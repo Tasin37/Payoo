@@ -12,6 +12,12 @@ document.getElementById('btn-addMoney').addEventListener('click', function(event
         const newbalance = addMoneyNum + balanceNum;
         console.log(newbalance);
         document.getElementById('balance').innerText = newbalance;
+
+        // adding in transaction history
+        const p = document.createElement('p');
+        p.innerText = `Added: ${addMoneyNum} Tk. New Balance: ${newbalance}`;
+
+        document.getElementById('transaction-history').appendChild(p);
     }
     else{
         alert('Failed to add money!! Please try again.');
